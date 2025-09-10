@@ -126,3 +126,60 @@ footer .footer_content .social_media {
 footer .footer_content .social_media img {
   width: 25px;
 }
+
+.homeSection .home_header {
+  padding-top: 3rem;
+}
+
+.homeSection .home_header h1 {
+  color: #00ddb9;
+  font-size: 35px;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.homeSection .home_header h3 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.homeSection .home_header a {
+  padding: 0.5rem 0.8rem;
+  color: #00ddb9;
+  border: 1px solid #00ddb9;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  display: block;
+  width: fit-content;
+  margin: 0.8rem auto;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.homeSection .home_header a:hover {
+  color: white;
+  background-color: #00ddb9;
+}
+
+.homeSection .home_imgs {
+  background-image: url("/assets/floor.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeSection .home_imgs .img1 {
+  width: 300px;
+  object-fit: contain;
+}
+
+.homeSection .home_imgs .img2 {
+  width: 500px;
+  object-fit: contain;
+}
