@@ -3,11 +3,15 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #0b0b0b;
+  transition: 0.3s all ease;
 }
 
 a {
   color: white;
   text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
 }
 
 .container {
@@ -26,12 +30,20 @@ nav {
   height: 70px;
   background-color: #0c0c0c;
   box-shadow: 0 3px 10px #00ddb9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .container{
+  width: 100%;
 }
 
 nav .nav_content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 nav .nav_content .logo {
@@ -182,4 +194,78 @@ footer .footer_content .social_media img {
 .homeSection .home_imgs .img2 {
   width: 500px;
   object-fit: contain;
+}
+
+.aboutUsSection {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.aboutUsSection .aboutHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+}
+
+.aboutUsSection .aboutHeader h1 {
+  color: #00ddb9;
+  font-size: 35px;
+}
+
+.aboutUsSection .aboutHeader p {
+  color: #929292;
+}
+
+.aboutUsSection .why_us_boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 50%;
+}
+
+.aboutUsSection .why_us_boxes .why_us_2_boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.aboutUsSection .why_us_boxes .box {
+  padding: 1rem;
+  border: 1px solid #00ddb9;
+  border-radius: 10px;
+  width: 200px;
+  height: 180px;
+}
+
+.aboutUsSection .why_us_boxes .box .bg_container {
+  padding: 0.8rem;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #00ddb9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUsSection .why_us_boxes .box .img_lamb {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.aboutUsSection .why_us_boxes .box .puzzle_img {
+  object-fit: contain;
+}
+
+.aboutUsSection .why_us_boxes .box h5 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 2rem ;
 }
