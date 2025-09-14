@@ -1,6 +1,13 @@
+"use client";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Home() {
+  
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div className="sectionsContainer">
       <section id="Home" className="homeSection">
@@ -41,13 +48,43 @@ export default function Home() {
           </div>
           <div className="box">
             <div className="bg_container">
-                <img className="puzzle_img" src="/assets/puzzle.png" alt="" />
-              </div>
-              <h5>Tailored Solutions</h5>
+              <img className="puzzle_img" src="/assets/puzzle.png" alt="" />
+            </div>
+            <h5>Tailored Solutions</h5>
           </div>
         </div>
       </section>
-      <section id="contactUs" className="contactUsSection"></section>
+      <section id="contactUs" className="contactUsSection">
+        <div className="contact_header">
+          <h1>
+            Excited <br />
+            to explore <br />
+            <span>possibilities together?</span>
+          </h1>
+        </div>
+        <div className="contact_us_content">
+          <h4>Drop us a message</h4>
+          <form action="">
+            <div>
+              <label htmlFor="">Enter your email</label>
+              <input type="text" placeholder="Write Your Email...." />
+            </div>
+            <div>
+              <label htmlFor="">Add your message here</label>
+              <textarea
+                name=""
+                id=""
+                rows={9}
+                placeholder="Enter Message Here...."
+              ></textarea>
+            </div>
+            <button>submit</button>
+          </form>
+        </div>
+      </section>
+      <div className="getStartedBtn">
+        <button>Get Started</button>
+      </div>
     </div>
   );
 }

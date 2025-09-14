@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #0b0b0b;
+  scroll-behavior: smooth;
   transition: 0.3s all ease;
 }
 
@@ -268,4 +269,92 @@ footer .footer_content .social_media img {
   font-size: 25px;
   font-weight: 500;
   margin-top: 2rem ;
+}
+
+.contactUsSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+}
+
+.contactUsSection h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.contactUsSection h1 span {
+  color: #00ddb9;
+}
+
+.getStartedBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.getStartedBtn button {
+  color: white;
+  background-color: #00ddb9;
+  border-radius: 8px;
+  font-size: 18px;
+  padding:1rem;
+  border: none;
+  width: 180px;
+}
+
+
+.contactUsSection .contact_header,
+.contactUsSection .contact_us_content {
+  width: calc((100% - 2rem) / 2);
+}
+
+.contactUsSection .contact_us_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactUsSection .contact_us_content form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+
+}
+
+.contactUsSection .contact_us_content form div label {
+  font-weight: 300;
+}
+
+.contactUsSection .contact_us_content form div input,
+.contactUsSection .contact_us_content form div textarea {
+  outline: 0;
+  border: 1px solid #00ddb9;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #181818;
+  width: 90%;
+}
+
+.contactUsSection .contact_us_content h4{
+  color: #00ddb9;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.contactUsSection .contact_us_content button {
+  outline: 0;
+  padding: 1rem;
+  border: 1px solid #00ddb9;
+  background-color: #00ddb9;
+  color: white;
+  font-size: 18px;
+  width: 180px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
