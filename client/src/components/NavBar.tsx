@@ -6,10 +6,10 @@ function NavBar() {
     <nav>
       <div className="container">
         <main className='nav_content'>
-          <h1 className='logo' >Oscar</h1>
+          <Link href={"/"} className='logo' >Oscar</Link>
           <div className='nav_links'>
-            <Link href={"#aboutUs"}>About US</Link>
-            <Link href={"#contactUs"}>Contact US</Link>
+            <Link href={"/#aboutUs"}>About US</Link>
+            <Link href={"/#contactUs"}>Contact US</Link>
             <Link href={"/login"} className='loginBtn'>Login</Link>
           </div>
         </main>

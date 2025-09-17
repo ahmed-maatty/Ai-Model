@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Home() {
-  
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
@@ -83,7 +83,7 @@ export default function Home() {
         </div>
       </section>
       <div className="getStartedBtn">
-        <button>Get Started</button>
+        <Link href={"/login"}>Get Started</Link>
       </div>
     </div>
   );
