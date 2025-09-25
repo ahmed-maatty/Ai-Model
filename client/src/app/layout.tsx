@@ -1,12 +1,15 @@
+"use client";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import dynamic from "next/dynamic";
 import { Kanit } from "next/font/google";
 
 const kanit = Kanit({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
+
+const NavBar = dynamic(() => import("../components/NavBar"), { ssr: false });
 
 export default function RootLayout({
   children,

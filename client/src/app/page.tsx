@@ -1,11 +1,15 @@
 "use client";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Cookies from "js-cookie";
 
 export default function Home() {
-
+  const [token, setToken] = useState<string | null>(null);
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    const t = Cookies.get("token");
+    console.log(t)
+    setToken(t || null);
   }, []);
 
   return (
@@ -14,7 +18,7 @@ export default function Home() {
         <div className="home_header">
           <h1>Your virtual assistant for instant</h1>
           <h3>personalized website support.</h3>
-          <Link href={"/login"}>Get Started</Link>
+          <Link href={token ? "/chat" : "/login"}>Get Started</Link>
         </div>
         <div className="home_imgs">
           <img className="img1" src="/assets/robot.png" alt="" />
@@ -25,10 +29,17 @@ export default function Home() {
         <div className="aboutHeader">
           <h1>Why US</h1>
           <p>
-            Choose us for unparalleled expertise, tailored solutions, and
-            cutting-edge technology. Join a community of satisfied clients who
-            thrive with our customer-centric approach and proven track record of
-            success.
+            Choose Oscar for Expert Solutions and Lasting Impact, At Oscar, we
+            provide unparalleled expertise and tailored solutions designed to
+            meet your unique needs. Our team combines experience, innovation,
+            and cutting-edge technology to deliver results that drive real
+            business growth. Every project is handled with a customer-centric
+            approach, ensuring practical and sustainable outcomes. Join a
+            community of satisfied clients who trust Oscar for reliable,
+            innovative, and effective strategies. We focus on empowering
+            businesses to thrive, stay ahead of the competition, and achieve
+            long-term success. With Oscar, your goals are our mission, and your
+            success is our priority.
           </p>
         </div>
         <div className="why_us_boxes">
@@ -83,7 +94,7 @@ export default function Home() {
         </div>
       </section>
       <div className="getStartedBtn">
-        <Link href={"/login"}>Get Started</Link>
+        <Link href={token ? "/chat" : "/login"}>Get Started</Link>
       </div>
     </div>
   );
