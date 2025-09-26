@@ -460,7 +460,33 @@ footer .footer_content .social_media img {
 
 .chatSection .chatScreen .screen {
   width: 100%;
-  height: 500px;
+  height: 400px;
+  padding: 1rem;
+}
+
+.chatSection .chatScreen .screen .prompt_contaiener{
+  width: 100%;
+}
+
+.chatSection .chatScreen .screen .prompt_contaiener .sender {
+  background-color: #00ddb9;
+  color: white;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 0.7rem;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.chatSection .chatScreen .screen .prompt_contaiener .response {
+  color: white;
+  background-color: #242424;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 0.7rem;
+  width: fit-content;
 }
 
 .chatSection .chatScreen .input_btn_send {
