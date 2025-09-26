@@ -17,8 +17,8 @@ function NavBar() {
             Oscar
           </Link>
           <div className="nav_links">
-            <Link href={"/#aboutUs"}>About US</Link>
-            <Link href={"/#contactUs"}>Contact US</Link>
+            <Link href={"/#aboutUs"} className="aboutUs_Nav_Link">About US</Link>
+            <Link href={"/#contactUs"} className="contactUs_Nav_Link">Contact US</Link>
             {token ? (
               <Link href={"/chat"} className="loginBtn">
                 Start Chat
